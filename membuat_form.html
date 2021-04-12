@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Tugas</title>
+</head>
+<body>
+	<header>
+		<h1>Form Tugas</h1>
+	</header>
+	<fieldset>
+		<legend>Daftar Member</legend>
+		<p>
+			<label for="nama_lengkap">Nama Lengkap</label>
+			<input type="text"  id="nama_lengkap" name="nama_lengkap">
+		</p>
+		<p>
+			<label for="alamat">Alamat</label>
+			<textarea id="alamat" name="alamat" cols="29" rows="3"></textarea>
+		</p>
+		<p>
+			<label>Jenis Kelamin</label>
+			<input type="radio" value="L" id="jenis_kelamin_l" name="kelamin">
+			<label for="jenis_kelamin_l">Laki-laki</label>
+			<input type="radio" id="jenis_kelamin_p" name="kelamin" value="P">
+			<label for="jenis_kelamin_p">Perempuan</label>
+		</p>	
+		<p>	
+			<select name="shift">
+				<option value="" selected="selected">Pilih Shift</option>
+				<option value="shift_pagi">Pagi</option>
+				<option value="shift_malam">Malam</option>
+			</select>
+		</p>
+		<form>
+			<p>Pilih merek mobil:</p>
+			<select name="nama_mobil" size="4">
+				<option value="1" selected="selected">Yaris</option>
+				<option value="2">Ford</option>
+				<option value="3">Audi</option>
+				<option value="4">Honda Jazz</option>
+				<option value="5">JEEP</option>
+			</select>
+		</form>
+		<p>
+			<input type="submit" value="Daftar">
+		</p>
+	</fieldset>
+</body>
+</html>
